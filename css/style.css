@@ -3,7 +3,6 @@
 html,
 body {
   background: #fefefe;
-  overflow: hidden;
 }
 
 header {
@@ -59,51 +58,53 @@ header {
 }
 
 .menu .contenu-menu {
-    background: rgba(0, 0, 0, 0.8);
-    position: absolute;
-    top: 0;
-    left: -1000px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    transition: all .5s ease-in-out;
-    z-index: 10;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: -1000px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  z-index: 10;
 }
 
 .menu.open .contenu-menu {
-    left: 0;
+  left: 0;
 }
 
 .menu .contenu-menu .item {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 80px;
-    border-top: solid 1px rgba(255, 255, 255, .5);
-    border-bottom: solid 1px rgba(255, 255, 255, .5);
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  border-top: solid 1px rgba(255, 255, 255, 0.5);
+  border-bottom: solid 1px rgba(255, 255, 255, 0.5);
 }
 
 .menu .contenu-menu .item a {
-    display: block;
-    color: #fefefe;
-    text-decoration: none;
-    width: 98%;
-    padding: 32px;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fefefe;
+  text-decoration: none;
+  width: 98%;
+  height: 100%;
+  text-align: center;
 }
 
 .menu .contenu-menu .item .bene {
-  border-right: solid 1px rgba(255, 255, 255, .5);
-  background: rgba(65, 0, 0, .8);
-  height: auto;
+  border-right: solid 1px rgba(255, 255, 255, 0.5);
+  background: rgba(65, 0, 0, 0.8);
 }
 .menu .contenu-menu .item .part {
-  border-left: 1px solid rgba(255, 255, 255, .5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+
 }
 
 .logo img {
