@@ -17,7 +17,7 @@ header {
 .toggle {
   position: relative;
   background: none;
-  width: 70px;
+  width: 50px;
   height: 70px;
   border-radius: 10px;
   display: flex;
@@ -39,21 +39,20 @@ header {
 
 .toggle span:nth-child(1) {
   transform: translateY(-15px);
-  width: 25px;
-  left: 15px;
+  width: 40px;
+
 }
 .toggle.active span:nth-child(1) {
-  width: 40px;
-  transform: translateY(0) rotate(45deg);
+  transform: translateY(0) rotate(225deg);
 }
 .toggle span:nth-child(2) {
   transform: translateY(15px);
-  width: 35px;
-  left: 15px;
+  width: 40px;
+  
 }
 .toggle.active span:nth-child(2) {
   width: 40px;
-  transform: translateY(0) rotate(-45deg);
+  transform: translateY(0) rotate(135deg);
 }
 
 .toggle.active span:nth-child(3) {
@@ -69,7 +68,7 @@ header {
   height: 100%;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   transition: all 0.5s ease-in-out;
   z-index: 10;
@@ -78,7 +77,12 @@ header {
 .menu.open .contenu-menu {
   left: 0;
 }
-
+.menu .contenu-menu .space {
+  height: 2px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.5);
+}
 .menu .contenu-menu .item {
   display: flex;
   flex-flow: row;
@@ -86,9 +90,7 @@ header {
   align-items: center;
   width: 100%;
   height: 80px;
-  border-top: solid 0.5px rgba(255, 255, 255, 0.5);
-  border-bottom: solid 0.5px rgba(255, 255, 255, 0.5);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  
 }
 
 .menu .contenu-menu .item a {
@@ -96,6 +98,7 @@ header {
   justify-content: center;
   align-items: center;
   color: #fefefe;
+  font-size: 1.3em;
   text-decoration: none;
   width: 100%;
   height: 100%;
@@ -144,12 +147,13 @@ header {
   width: 40px;
 }
 
-
 .hero{
+  margin-top: -100px;
   width: 100%;
   height: 300px;
+  z-index: 0;
 }
 .hero img{
   width: 100%;
-  height: auto;
+  height:100vh;
 }
