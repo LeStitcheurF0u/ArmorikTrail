@@ -6,8 +6,14 @@ body {
 }
 
 header {
+  position: sticky;
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background: rgba(254, 254, 254, .5);
 }
 
 .toggle {
@@ -61,7 +67,7 @@ header {
   position: absolute;
   top: 0;
   left: -3000px;
-  width: 100%;
+  width: 80%;
   height: 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -93,7 +99,7 @@ header {
   align-items: center;
   color: #fefefe;
   text-decoration: none;
-  width: 98%;
+  width: 100%;
   height: 100%;
   text-align: center;
 }
@@ -104,6 +110,7 @@ header {
 .menu .contenu-menu .item .bene {
   border-right: solid 1px rgba(255, 255, 255, 0.5);
   background: rgba(65, 0, 0, 0.8);
+
 }
 .menu .contenu-menu .item .bene:hover{
   background: rgba(65, 0, 0, 0.99);
@@ -120,4 +127,22 @@ header {
   width: 98%;
   height: auto;
   z-index: 1;
+}
+
+
+.rs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rs a img {
+  width: 25px;
+  height: auto;
+}
+
+
+.hero{
+  width: 100%;
+  height: 300px;
 }
