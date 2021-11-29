@@ -90,14 +90,20 @@ header {
 
 .menu .contenu-menu .item a {
     display: block;
-    margin-top: 45px;
     color: #fefefe;
     text-decoration: none;
     width: 98%;
-    height: 100%;
+    padding: 32px;
     text-align: center;
 }
 
+.menu .contenu-menu .item .bene {
+  border-right: solid 1px rgba(255, 255, 255, .5);
+  background: rgba(65, 0, 0, .8);
+}
+.menu .contenu-menu .item .part {
+  border-left: 1px solid rgba(255, 255, 255, .5);
+}
 
 .logo img {
   width: 98%;
