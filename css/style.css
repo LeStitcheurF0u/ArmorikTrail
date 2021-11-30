@@ -38,7 +38,7 @@ header {
   position: absolute;
   width: 40px;
   height: 4px;
-  background: #857273;
+  background: #fefefe;
   border-radius: 4px;
   transition: 0.5s;
 }
@@ -70,7 +70,7 @@ header {
   position: absolute;
   top: 0;
   left: -3000px;
-  width: 30%;
+  width: 50vw;
   height: 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -143,13 +143,14 @@ header {
 .rs {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .rs a img {
-  width: 25px;
+  width: 50px;
   height: auto;
+  margin: 5px;
   transition: .5s ease-in-out;
 }
 .rs a img:hover{
@@ -197,18 +198,24 @@ header {
 .cta .cta-btn {
   margin: 50px;
   width: 200px;
-  height: 100px;
+  height: 75px;
   background: rgba(0, 0, 0, 0.7);
   border: .5px solid rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  transition: .2s ease-in-out;
 }
 
+.cta .cta-btn:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
 .cta-btn a {
   color: #fefefe;
   font-size: 2em;
   text-decoration: none;
-  padding: 40px;
+  padding: 25px;
   width: 100%;
   height: 100%;
 }
+
